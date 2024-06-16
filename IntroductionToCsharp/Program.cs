@@ -19,14 +19,18 @@ namespace IntroductionToCsharp
         #region Reading and writing
         //static void Main()
         //{
-        //    Console.WriteLine("Please enter your name");
+        //    Console.WriteLine("Please enter your first name");
 
-        //    string userName = Console.ReadLine();
+        //    string firstName = Console.ReadLine();
+
+        //    Console.WriteLine("Please enter your last name");
+
+        //    string lastName = Console.ReadLine();
 
         //    //Console.WriteLine("Hello " + userName);
         //    // we can use placeholder for same as well.
-        //    Console.WriteLine("Hello {0}", userName);
-        //} 
+        //    Console.WriteLine("Hello {0}, {1}", firstName, lastName);
+        //}
         #endregion
     }
 }
