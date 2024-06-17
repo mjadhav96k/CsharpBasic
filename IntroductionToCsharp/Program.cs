@@ -147,26 +147,38 @@ namespace IntroductionToCsharp
         #endregion
 
         #region Parse and TryParse if number is in a string format
-        static void Main()
-        {
-            string strNumber = "100";
-            //int i = strNumber; // throws error
-            int i = int.Parse(strNumber);
-            Console.WriteLine(i);
+        //static void Main()
+        //{
+        //    string strNumber = "100";
+        //    //int i = strNumber; // throws error
+        //    int i = int.Parse(strNumber);
+        //    Console.WriteLine(i);
 
-            string strNumber2 = "100MJ";
-            int result = 0;
-            bool IsConversionSuccessful = int.TryParse(strNumber2, out result); //return type of TryParse is boolean.
+        //    string strNumber2 = "100MJ";
+        //    int result = 0;
+        //    bool IsConversionSuccessful = int.TryParse(strNumber2, out result); //return type of TryParse is boolean.
 
-            if (IsConversionSuccessful)
-            {
-                Console.WriteLine(result);
-            }
-            else
-            {
-                Console.WriteLine("Please enter valid number");
-            }
-        } 
+        //    if (IsConversionSuccessful)
+        //    {
+        //        Console.WriteLine(result);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Please enter valid number");
+        //    }
+        //} 
+        #endregion
+
+        #region Array
+        //static void Main()
+        //{
+        //    int[] arrEvenNumber = new int[3];
+        //    arrEvenNumber[0] = 0;
+        //    arrEvenNumber[1] = 2;
+        //    arrEvenNumber[2] = 4;
+
+        //    Console.WriteLine(arrEvenNumber[1]);
+        //} 
         #endregion
 
     }
