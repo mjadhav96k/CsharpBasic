@@ -104,26 +104,68 @@ namespace IntroductionToCsharp
         #endregion
 
         #region Null coalescing operator
+        //static void Main()
+        //{
+        //int? ticketsOnSale = null;
+        //int availableTickets;
+
+        //if(ticketsOnSale == null)
+        //{
+        //    availableTickets = 0;
+        //}
+        //else
+        //{
+        //    availableTickets = ticketsOnSale.Value; // we have to convert it from nullable to non-nullable by value we can do it or by implicit comversion like (int)ticketsOnSale
+        //}
+        //Console.WriteLine("Available tickets = {0}", availableTickets);
+
+        // we can do this by different way null coalescing operator
+        //    int? ticketsOnSale = 100;
+        //    int availableTickets = ticketsOnSale ?? 0;
+        //    Console.WriteLine("Available Tickets = {0}", availableTickets);
+
+        //} 
+        #endregion
+
+        #region Implicit and explicit Conversion
+        //static void Main()
+        //{
+        //    //int i = 100;
+        //    //float f = i;
+        //    //Console.WriteLine(f); //implicit conversion
+
+        //    float f = 123.45f;
+        //    int i = (int)f;
+        //    Console.WriteLine(i); // explicit conversion may occur loss of data using type cast operator
+
+        //    // other way to explicit
+        //    int j = Convert.ToInt32(f);
+        //    Console.WriteLine(j); // same explicit using Convert class
+        //    // good practice is to use Convert class becuase it will throw exception when value is not in range of data type.
+        //    // if we use type cast operator it can give number in -2346378 it will try to do conversion and will not throw exception.
+        //} 
+        #endregion
+
+        #region Parse and TryParse if number is in a string format
         static void Main()
         {
-            //int? ticketsOnSale = null;
-            //int availableTickets;
+            string strNumber = "100";
+            //int i = strNumber; // throws error
+            int i = int.Parse(strNumber);
+            Console.WriteLine(i);
 
-            //if(ticketsOnSale == null)
-            //{
-            //    availableTickets = 0;
-            //}
-            //else
-            //{
-            //    availableTickets = ticketsOnSale.Value; // we have to convert it from nullable to non-nullable by value we can do it or by implicit comversion like (int)ticketsOnSale
-            //}
-            //Console.WriteLine("Available tickets = {0}", availableTickets);
+            string strNumber2 = "100MJ";
+            int result = 0;
+            bool IsConversionSuccessful = int.TryParse(strNumber2, out result); //return type of TryParse is boolean.
 
-            // we can do this by different way null coalescing operator
-            int? ticketsOnSale = 100;
-            int availableTickets = ticketsOnSale ?? 0;
-            Console.WriteLine("Available Tickets = {0}", availableTickets);
-
+            if (IsConversionSuccessful)
+            {
+                Console.WriteLine(result);
+            }
+            else
+            {
+                Console.WriteLine("Please enter valid number");
+            }
         } 
         #endregion
 
