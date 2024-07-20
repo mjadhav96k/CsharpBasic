@@ -181,5 +181,38 @@ namespace IntroductionToCsharp
         //} 
         #endregion
 
+        #region Switch Statement
+        //static void Main()
+        //{
+        //    int userNumber = 0;
+
+        //    try
+        //    {
+        //        Console.WriteLine("Enter your number");
+        //        userNumber = int.Parse(Console.ReadLine());
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine("Enter Valid Number");
+        //        Console.WriteLine(ex.Message);
+        //        throw;
+        //    }
+
+        //    switch (userNumber)
+        //    {
+        //        case 10:
+        //        case 20:
+        //        case 30:
+        //            Console.WriteLine("Your number is {0}", userNumber);
+        //            break;
+        //        default:
+        //            Console.WriteLine("Enter number is other than 10, 20 and 30");
+        //            break;
+        //    }
+
+
+        //} 
+        #endregion
+
     }
 }
