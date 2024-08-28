@@ -206,13 +206,66 @@ namespace IntroductionToCsharp
         //            Console.WriteLine("Your number is {0}", userNumber);
         //            break;
         //        default:
-        //            Console.WriteLine("Enter number is other than 10, 20 and 30");
+        //            Console.WriteLine("Entered number is other than 10, 20 and 30");
         //            break;
         //    }
-
-
-        //} 
+        //}
         #endregion
 
+        #region Switch Continued coffeeShop
+        //static void Main()
+        //{
+        //    int totalCoffeeCost = 0;
+
+        //    Start:
+        //    Console.WriteLine("1. Small, 2. Medium, 3. Large");
+        //    int userChoice = int.Parse(Console.ReadLine());
+        //    switch (userChoice)
+        //    {
+        //        case 1:
+        //            totalCoffeeCost += 1;
+        //            break;
+        //        case 2:
+        //            totalCoffeeCost += 2;
+        //            break;
+        //        case 3:
+        //            totalCoffeeCost += 3;
+        //            break;
+        //        default:
+        //            Console.WriteLine($"Invalid Choice {userChoice}");
+        //            goto Start;
+        //    }
+
+        //    Decide:
+        //    Console.WriteLine("Do you want to buy another coffee - Yes or No?");
+        //    string userDecision = Console.ReadLine();
+        //    switch(userDecision.ToUpper())
+        //    {
+        //        case "YES":
+        //            goto Start;
+        //        case "NO":
+        //            break;
+        //        default:
+        //            Console.WriteLine($"Invalid choice {userDecision}");
+        //            goto Decide;
+        //    }
+
+        //    Console.WriteLine($"Thanks for shopping\nBill amount = {totalCoffeeCost}");
+        //}
+        #endregion
+
+        #region While loop : (Print even numbers till user want)
+        //static void Main()
+        //{
+        //    Console.WriteLine("Enter your even number: ");
+        //    int number = int.Parse(Console.ReadLine());
+        //    int start = 0;
+        //    while (start <= number)
+        //    {
+        //        Console.Write(start+ " ");
+        //        start += 2;
+        //    }
+        //} 
+        #endregion
     }
 }
