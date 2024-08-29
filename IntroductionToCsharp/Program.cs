@@ -267,5 +267,34 @@ namespace IntroductionToCsharp
         //    }
         //} 
         #endregion
+
+        #region Do While loop
+        static void Main()
+        {
+            string userChoice = "";
+            do
+            {
+                Console.WriteLine("Enter your even number: ");
+                int number = int.Parse(Console.ReadLine());
+                int start = 0;
+                while (start <= number)
+                {
+                    Console.Write(start + " ");
+                    start += 2;
+                }
+
+                do
+                {
+                    Console.WriteLine("Do you want to continue: Yes or No?");
+                    userChoice = Console.ReadLine().ToUpper(); 
+                    if(userChoice != "YES" && userChoice != "NO")
+                    {
+                        Console.WriteLine("Invalid choice, please say Yes or No.");
+                    }
+                } while (userChoice != "YES" && userChoice != "NO");
+            } while (userChoice == "YES");
+        } 
+        #endregion
+
     }
 }
