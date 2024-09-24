@@ -269,31 +269,74 @@ namespace IntroductionToCsharp
         #endregion
 
         #region Do While loop
-        static void Main()
-        {
-            string userChoice = "";
-            do
-            {
-                Console.WriteLine("Enter your even number: ");
-                int number = int.Parse(Console.ReadLine());
-                int start = 0;
-                while (start <= number)
-                {
-                    Console.Write(start + " ");
-                    start += 2;
-                }
+        //static void Main()
+        //{
+        //    string userChoice = "";
+        //    do
+        //    {
+        //        Console.WriteLine("Enter your even number: ");
+        //        int number = int.Parse(Console.ReadLine());
+        //        int start = 0;
+        //        while (start <= number)
+        //        {
+        //            Console.Write(start + " ");
+        //            start += 2;
+        //        }
 
-                do
-                {
-                    Console.WriteLine("Do you want to continue: Yes or No?");
-                    userChoice = Console.ReadLine().ToUpper(); 
-                    if(userChoice != "YES" && userChoice != "NO")
-                    {
-                        Console.WriteLine("Invalid choice, please say Yes or No.");
-                    }
-                } while (userChoice != "YES" && userChoice != "NO");
-            } while (userChoice == "YES");
-        } 
+        //        do
+        //        {
+        //            Console.WriteLine("Do you want to continue: Yes or No?");
+        //            userChoice = Console.ReadLine().ToUpper(); 
+        //            if(userChoice != "YES" && userChoice != "NO")
+        //            {
+        //                Console.WriteLine("Invalid choice, please say Yes or No.");
+        //            }
+        //        } while (userChoice != "YES" && userChoice != "NO");
+        //    } while (userChoice == "YES");
+        //} 
+        #endregion
+
+        #region for and foreach with break & continue
+        //static void Main()
+        //{
+        //    //declaration
+        //    //int[] Numbers = new int[3];
+        //    //Numbers[0] = 101;
+        //    //Numbers[1] = 102;
+        //    //Numbers[2] = 103;
+
+        //    // foreach
+        //    //foreach(int i in Numbers)
+        //    //{
+        //    //    Console.WriteLine(i);
+        //    //}
+
+        //    // for 
+        //    //for(int i = 0; i < Numbers.Length; i++)
+        //    //{
+        //    //    Console.WriteLine(Numbers[i]);
+        //    //}
+
+        //    //use of break to print till 10 only
+        //    //for(int i = 1; i <= 20; i++) 
+        //    //{
+        //    //    Console.WriteLine(i);
+        //    //    if(i == 10)
+        //    //    {
+        //    //        break;
+        //    //    }
+        //    //}
+
+        //    //use of continue to print even numbers only but dont increment value by 2
+        //    //for(int i = 1; i <= 20; i++)
+        //    //{
+        //    //    if(i % 2 == 1)
+        //    //    {
+        //    //        continue;
+        //    //    }
+        //    //    Console.WriteLine(i);
+        //    //}
+        //} 
         #endregion
 
     }
